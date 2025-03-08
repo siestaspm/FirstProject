@@ -32,12 +32,12 @@ const LoginScreen = ({navigation}) => {
   const handleLoginPress = async () => {
     try {
       const endpoint = `${API_BASE_URL}/auth/login`;
-      const inputData = {
-        username: username,
-        password: password,
-      };
+        const inputData = {
+          username: username,
+          password: password,
+        };
       const response = await axios.post(endpoint, inputData);
-      console.log(JSON.stringify(response.data, null, 2));
+      console.log(JSON.stringify(response, null, 2));
       if (response.status === 200 && typeof response.data === 'object') {
         navigation.dispatch(
           CommonActions.reset({

@@ -28,9 +28,6 @@ const WelcomeScreen = ({navigation}) => {
           source={{uri: 'https://bootdey.com/img/Content/avatar/avatar3.png'}}
           style={styles.image}
         />
-        <Text style={styles.desc}>
-          {'Please log in to continue\n to the awesommess'}
-        </Text>
       </View>
       <View style={styles.inAppContainer}>
         <TouchableOpacity

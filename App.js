@@ -8,6 +8,7 @@ import WelcomeScreen from './src/MainScreens/WelcomeScreen';
 import LoginScreen from './src/MainScreens/LoginScreen';
 import RegisterScreen from './src/MainScreens/RegisterScreen';
 import ProfileScreen from './src/MainScreens/ProfileScreen';
+
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -15,8 +16,6 @@ const App = () => {
     <SafeAreaProvider
       style={{
         flexGrow: 1,
-        backgroundColor: 'rgba(3, 3, 3, 1)',
-        marginTop: Platform.OS === 'ios' ? 50 : 0,
       }}>
       <GestureHandlerRootView style={{flex: 1}}>
         <NavigationContainer>
